@@ -1,15 +1,30 @@
 {% extends "layout.html" %}
 {% block content %}
-    {% for post in posts %}
-        <article class="media content-section">
-          <div class="media-body">
-            <div class="article-metadata">
-              <a class="mr-2" href="#">{{ post.author }}</a>
-              <small class="text-muted">{{ post.date_posted }}</small>
-            </div>
-            <h2><a class="article-title" href="#">{{ post.title }}</a></h2>
-            <p class="article-content">{{ post.content }}</p>
-          </div>
-        </article>
-    {% endfor %}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>About Me</title>
+			<!-- Custom styles for this template go here -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+	</head>
+	<body>
+		<div class="container">
+			<div class="header">
+				<h1>About Me</h1>
+			</div><!-- end header-->
+			<div class="image">
+      <img src="img/profile.jpg">
+			</div><!-- end image-->
+			<div class="intro column">
+				<h2>Introduction</h2>
+				<p> I’m Sam, and I create data tools for school leaders, teachers, and students. My goal is the make data-driven instruction simple and transparent, so that educators can easily address gaps in their schools and classrooms, and focus on providing the highest quality advising for their students. </p>
+        <p> Currently, I work for OneGoal as a Senior Director of Analytics piloting a post-secondary access and persistence course, as well as supporting the buildout of our new district coaching program. I innovate using data systems and tools such as PowerBI, PostgreSQL, and Python. </p>
+        <p> I am inspired by the educators that I work with, passionate about how data can address education inequity, and am always enthusiastic to discuss our work, so feel free to reach out!	</p>
+			</div><!-- end intro-->
+		</div><!--end container-->
+	</body>
+</html>
 {% endblock content %}
