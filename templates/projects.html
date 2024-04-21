@@ -3,19 +3,24 @@
 <!DOCTYPE html>
 <html lang="en">
     <h1>Highlighted Projects</h1>
-    <div> <p> The following are projects that highlight my skillset from data visualization, statistics, and web development</p>
-
+    <div>
     </div>
     <article class="media content-section">
       <div class="media-body">
-        <h2><a class="content-title" href="#"> Strava Tracker </a></h2>
-        <p class="content-section"> Skills: (1) Python Dash (2) Plotly (3) JSON   </p>
+        <h2><a class="content-title" href="https://github.com/samkoenig1/strava-tracker" target = "_blank"> (1) Strava Tracker </a></h2>
+        <p class="content-section"> Skills: Python Dash, Plotly, JSON, APIs  </p>
         <h6> Description </h6>
-        <p> This is a simple python dash application to pull data from your strava application, and display back simple stats such as (1) Total Distance (2) Avg miles per hour (3) Number of Activities and (4) Average Speed all over time by month. This application is set up so that you can bring in your own strava account if you are interested. This does assume you have a basic understanding of apis / python dash.</p>
+        <p> This is a simple python dash application to pull data from your strava application, and display back simple stats such as (1) Total Distance (2) Avg miles per hour (3) Number of Activities and (4) Average Speed all over time by month. This application is set up so that you can bring in your own strava account if you are interested. </p>
         <img class="content-img" src="{{ url_for('static', filename='strava.png') }}">
-
       </div>
-
+    </article>
+    <article class="media content-section">
+      <div class="media-body">
+        <h2><a class="content-title" href="https://github.com/samkoenig1/portfolio"> (2) This Website </a></h2>
+        <p class="content-section"> Skills: Flask, HTML, CSS   </p>
+        <h6> Description </h6>
+        <p> This portfolio is a project of mine! </p>
+      </div>
     </article>
     </html>
 {% endblock content %}

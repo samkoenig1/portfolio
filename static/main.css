@@ -47,6 +47,7 @@ a.content:hover {
 
 .content-img {
   width: 400px;
+  border-style: ridge ;
 }
 
 .article-metadata {
