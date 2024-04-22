@@ -3,25 +3,36 @@
 <!DOCTYPE html>
 <html lang="en">
     <h1>Highlighted Projects</h1>
+    <form method="POST" action="">
+        {{ form.hidden_tag() }}
+        <fieldset class="form-group">
+            <div class="form-group">
+                {% if form.skills.errors %}
+                    {{ form.skills(class="form-control form-control-lg is-invalid") }}
+                    <div class="invalid-feedback">
+                        {% for error in form.skills.errors %}
+                            <span>{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    {{ form.skills(class="form-control form-control-lg", placeholder = "Search") }}
+                {% endif %}
+            </div>
+      </form>
     <div>
     </div>
+    {% for project in projects %}
     <article class="media content-section">
       <div class="media-body">
-        <h2><a class="content-title" href="https://github.com/samkoenig1/strava-tracker" target = "_blank"> (1) Strava Tracker </a></h2>
-        <p class="content-section"> Skills: Python Dash, Plotly, JSON, APIs  </p>
+        <h2><a class="content-title" href="https://github.com/samkoenig1/strava-tracker" target = "_blank"> {{ project.name }} </a></h2>
+        <p class="content-section"> Skills: {{project.skills}} </p>
         <h6> Description </h6>
-        <p> This is a simple python dash application to pull data from your strava application, and display back simple stats such as (1) Total Distance (2) Avg miles per hour (3) Number of Activities and (4) Average Speed all over time by month. This application is set up so that you can bring in your own strava account if you are interested. </p>
-        <img class="content-img" src="{{ url_for('static', filename='strava.png') }}">
+        <p> {{ project.description }}</p>
+        <img class="content-img" src="static/{{project.image}}.png">
+
       </div>
     </article>
-    <article class="media content-section">
-      <div class="media-body">
-        <h2><a class="content-title" href="https://github.com/samkoenig1/portfolio" target = "_blank"> (2) This Website </a></h2>
-        <p class="content-section"> Skills: Flask, HTML, CSS, Bootstrap  </p>
-        <h6> Description </h6>
-        <p> This portfolio is worth highlighting. I designed and built this portfolio in python flask utilizing my knowledge in HTML, CSS, bootstrap and more. </p>
-        <img class="content-img" src="{{ url_for('static', filename='portfolio.png') }}">
-      </div>
-    </article>
+    {% endfor %}
+
     </html>
 {% endblock content %}
