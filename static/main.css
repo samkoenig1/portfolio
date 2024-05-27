@@ -27,10 +27,21 @@ h1, h2, h3, h4, h5, h6 {
 .content-section {
   background: #ffffff;
   padding: 10px 20px;
-  border: 1px solid #dddddd;
+  border: 1px solid #003135;
   border-radius: 3px;
   margin-bottom: 20px;
 }
+
+.skills-section {
+  background: #ffffff;
+  padding: 10px;
+  border: 1px solid #FBE9D0;
+}
+
+.wrap {
+  float: right;
+  margin: 5px;
+ }
 
 .content-title {
   color: #444444;
@@ -50,6 +61,13 @@ a.content:hover {
   border-style: ridge ;
 }
 
+.prof-img {
+  float: right;
+  width: 250px;
+  height: 250px;
+  border-style: ridge ;
+}
+
 .article-metadata {
   padding-bottom: 1px;
   margin-bottom: 4px;
@@ -59,4 +77,12 @@ a.content:hover {
 .article-metadata a:hover {
   color: #333;
   text-decoration: none;
+}
+
+.footer {
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
 }
