@@ -2,7 +2,7 @@
 {% block content %}
 <!DOCTYPE html>
 <html lang="en">
-    <h1>Projects</h1>
+    <h1> Projects</h1>
     <hr>
     <form method="POST" action="">
         {{ form.hidden_tag() }}
@@ -27,7 +27,7 @@
 
         <article class="media content-section">
           <div class="media-body">
-            <p style = "float: right"><a href="{{ project.github }}" target = "_blank"> <i> Click To Explore Github </i> </a> </p>
+            <p style = "float: right"><a href="{{ project.github }}" target = "_blank"> {{ project.link_description }} </a> </p>
             <h2> {{ project.name }} </h2>
             <p class="skills-section"> <b> Skills: </b> {{project.skills}} </p>
             <div style = "float: left">

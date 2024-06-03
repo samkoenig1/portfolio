@@ -4,7 +4,8 @@ projects = [
 
     {
         'name': 'State Persistence Dashboard',
-        'description': 'PowerBI Report to transform and visualize enrollment, persistence, and publically available data to present back 100k dataset to districts from the state of Kentucky. Note that the report attached does not contain any real data, and is anonymized. This file will download to your computer due to a lack of PBI service access.',
+        'description': 'PowerBI Report to transform and visualize enrollment, persistence, and publically available data to present back 100k dataset to 13 districts from the state of Kentucky. Note that the report attached does not contain any real student data, and is anonymized. This file will download to your computer due to a lack of PBI service access.',
+        'link_description': 'Click to Download',
         'skills': 'PowerBI, Row Level Security, Power Query',
         #COME BACK TO ADD GITHUB LINK
         'github': '/download-persistence-report',
@@ -14,6 +15,7 @@ projects = [
     {
         'name': 'NWEA Map Report',
         'description': 'Tableau Report to visualize NWEA Map data for school districts in Nasvhille, TN and Jackson, MS. This data was used by over 300 staff members annually, and contained upward of 40k rows. In production, this was distributed by Tableau Service, but the following file will be downloaded as a twbx file, and you can open via Tableau Readers desktop application. All student and school data has been removed from this report.',
+        'link_description': 'Click to Download',
         'skills': 'Tableau, Tableau Prep',
         #COME BACK TO ADD GITHUB LINK
         'github': '/download-nweamap-report',
@@ -24,6 +26,7 @@ projects = [
     {
         'name': 'Automated Email Alerts',
         'description': 'Code written to pull data from PostgreSQL Warehouse, push to google sheets via python, and then send via javascript by user of the google sheet. This was used to alert our teachers of the students they needed to check in with, as well as any other celebrations, or areas for growth in their classroom. Pushing the data to google sheets allowed our training and support team to validate before sending.',
+        'link_description': 'Click to Explore Github',
         'skills': 'Python, Pandas, SQL, Javascript, HTML, CSS',
         'github': 'https://github.com/samkoenig1/early-alerts-email-automation',
         'image': 'early_alert'
@@ -33,6 +36,7 @@ projects = [
     {
         'name': 'Enrollment Dashboard',
         'description': 'A Looker Studio dashboard that cleanly presented National Student Clearinghouse data for 25 districts in the state of Illinois, so that school leaders could understand their student enrollment and persistence data broken down by subgroups such as Race / Ethnicity, Gender Identity, ELL and graduating class. Before pointing to the visualization layer, we used R to clean / transform the ~million row raw data file into a format readable by Looker Studio. This version uses fake data to protect student confidentiality.',
+        'link_description': 'Click to Explore Github',
         'skills': 'Looker Studio, R',
         #COME BACK TO ADD GITHUB LINK
         'github': '#',
@@ -41,6 +45,7 @@ projects = [
     {
         'name': 'Illinois Report Card - Webscraping / cleaning',
         'description': 'Python code to scrape the Illinois report card publically available data, downdload relevant files, and tranform dataset to columnar data suitable for a BI layer for metrics such as 9th Grade On Track, High School Graduation, Early College Coursework, Attendance, and Postsecondary Enrollment.',
+        'link_description': 'Click to Explore Github',
         'skills': 'Python Pandas, Selenium',
         #COME BACK TO ADD GITHUB LINK
         'github': 'https://github.com/samkoenig1/illinois_report_card_transform/blob/main/il.py',
@@ -49,6 +54,7 @@ projects = [
     {
         'name': 'Strava Tracker',
         'description': 'This is a simple python dash application to pull data from your strava application, and display back simple stats such as (1) Total Distance (2) Avg miles per hour (3) Number of Activities and (4) Average Speed all over time by month. This application is set up so that you can bring in your own strava account if you are interested.',
+        'link_description': 'Click to Explore Github',
         'skills': 'Python Dash, Plotly, JSON, APIs',
         'github': 'https://github.com/samkoenig1/strava-tracker',
         'image': 'strava'
@@ -57,6 +63,7 @@ projects = [
     {
         'name': 'Portfolio',
         'description': 'This is the website you are currently browsing! I built this using Python Flask, HTML, CSS, as a way to showcase some of the projects of which I am most proud.',
+        'link_description': 'Click to Explore Github',
         'skills': 'Flask, HTML, CSS, Bootstrap',
         'github': 'https://github.com/samkoenig1/portfolio',
         'image': 'portfolio'
@@ -64,6 +71,7 @@ projects = [
     {
         'name': 'Canvas Self-Onboarding Pop-Up',
         'description': 'A javascript pop-up that lives on top of any Canvas LMS system that takes three URL parameters (1) Join Code, (2) Name, and (3) Email and autopopulates upon open. This was used from a redirected form, to ensure that the student uses the same email address from the welcome form to them joining the course.',
+        'link_description': 'Click to Explore Github',
         'skills': 'Javascript',
         'github': 'https://github.com/samkoenig1/canvas-onboarding',
         'image': 'canvas_onboarding'
@@ -71,6 +79,7 @@ projects = [
     {
         'name': 'Mainstay / Salesforce Validation',
         'description': 'Python code to compare two separate files; one from Mainstay and one from Salesforce, to create a data quality report. Code lived in organizational sharefile account, and our team created an azure function and used Power automate to run the code anytime the reports from the respective sources were updated.',
+        'link_description': 'Click to Explore Github',
         'skills': 'Python, Pandas, Azure, Power Automate',
         'github': 'https://github.com/samkoenig1/mainstay-sf-validation-code/tree/main',
         'image': 'validation'
