@@ -16,7 +16,7 @@ app.config['SECRET_KEY'] = SECRET_KEY
 #Create dropdown form of skills to filter on the project page
 class SkillForm(FlaskForm):
     skills =  SelectField('Skills', \
-        choices=[('', 'All'),  ('HTML', 'HTML'), ('CSS', 'CSS'), ('Python', 'Python'),('Pandas', 'Pandas'), ('PowerBI', 'PowerBI'), ('Tableau', 'Tableau'), ('Looker Studio', 'Looker Studio'),('Javascript', 'Javascript')])
+        choices=[('', 'All'), ('Python', 'Python'), ('PowerBI', 'PowerBI'), ('Tableau', 'Tableau'),   ('HTML', 'HTML'), ('CSS', 'CSS'), ('Looker Studio', 'Looker Studio'),('Javascript', 'Javascript')])
 
 #Start app routes
 #home page
@@ -36,10 +36,23 @@ def project():
     return render_template('projects.html', title='Projects', form=form, projects= projects, selected_value = selected_value)
 
 #Download Resume
-@app.route('/download')
+@app.route('/downloadresume')
 def download_file():
-    # Replace 'example.txt' with the path to the file you want to serve
-    file_path = "static/resume.pdf"
+    #file path to download resume
+    file_path = "static/downloads/resume.pdf"
+    return send_file(file_path, as_attachment=True)
+
+
+@app.route('/download-persistence-report')
+def download_pbi_file():
+    #file path to download sample PBI report
+    file_path = "static/downloads/FY23_Persistence_Dashboard.pbix"
+    return send_file(file_path, as_attachment=True)
+
+@app.route('/download-nweamap-report')
+def download_twbx_file():
+    #file path to download sample tableau report
+    file_path = "static/downloads/nwea_map_spring_2019_report.twbx"
     return send_file(file_path, as_attachment=True)
 
 #Launch App
