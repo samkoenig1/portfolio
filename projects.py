@@ -4,7 +4,7 @@ projects = [
 
     {
         'name': 'State Persistence Dashboard',
-        'description': 'PowerBI Report to transform and visualize enrollment, persistence, and publically available data to present back 100k dataset to 13 districts from the state of Kentucky. Note that the report attached does not contain any real student data, and is anonymized. This file will download to your computer due to a lack of PBI service access.',
+        'description': 'PowerBI Report to transform and visualize enrollment, persistence, and publically available data to present back 100k dataset to 13 districts from the state of Kentucky. Note that the report attached has all student data removed, and is for demonstration purposes only. This file will download to your computer as a .pwbx and you will need PowerBI Desktop to open it.',
         'link_description': 'Click to Download',
         'skills': 'PowerBI, Row Level Security, Power Query',
         #COME BACK TO ADD GITHUB LINK
