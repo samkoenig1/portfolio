@@ -49,6 +49,17 @@ projects = [
         'github': 'https://github.com/samkoenig1/nsc_data_cleaning',
         'image': 'persistence'
     },
+
+    {
+        'name': 'UChicago To&Through Presentation',
+        'description': 'A presentation I gave to the University of Chicago To&Through Collaborative. I discussed the build out and test of a Fellow Journey Map, a tool displayed to studnets to support them in keeping track of their Junior Year milestones, and engage in advising with their teacher.',
+        'link_description': 'Click to Watch Presentation',
+        'skills': 'Presentation, Public Speaking',
+        'github': 'https://drive.google.com/file/d/1rdz4AwLOZqStrT8M_QSmwdYlWfyrdYPh/view?usp=sharing',
+        'image': 'fellow_journey_map'
+    },
+
+
     {
         'name': 'Illinois Report Card - Webscraping / cleaning',
         'description': 'Python code to scrape the Illinois report card publically available data, downdload relevant files, and tranform dataset to columnar data suitable for a BI layer for metrics such as 9th Grade On Track, High School Graduation, Early College Coursework, Attendance, and Postsecondary Enrollment.',
