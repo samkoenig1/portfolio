@@ -38,7 +38,7 @@ projects = [
         'skills': 'PowerBI, Power Query, Python, Pandas, Data Cleaning',
         #COME BACK TO ADD GITHUB LINK
         'github': 'https://github.com/samkoenig1/student_survey_pbi_report/tree/main/student_end_of_year_survey_2022',
-        'image': 'persistence'
+        'image': 'end_of_year_survey'
     },
 
     {
@@ -46,7 +46,6 @@ projects = [
         'description': 'A Looker Studio dashboard that cleanly presented National Student Clearinghouse data for 25 districts in the state of Illinois, so that school leaders could understand their student enrollment and persistence data broken down by subgroups such as Race / Ethnicity, Gender Identity, ELL and graduating class. Before pointing to the visualization layer, we used R to clean / transform the ~million row raw data file into a format readable by Looker Studio.',
         'link_description': 'Click to Explore Github',
         'skills': 'Looker Studio, R',
-        #COME BACK TO ADD GITHUB LINK
         'github': 'https://github.com/samkoenig1/nsc_data_cleaning',
         'image': 'persistence'
     },

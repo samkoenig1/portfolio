@@ -55,14 +55,6 @@ def download_twbx_file():
     file_path = "static/downloads/nwea_map_spring_2019_report.twbx"
     return send_file(file_path, as_attachment=True)
 
-@app.route('/download-pbi-survey')
-def download_pbi_survey_file():
-    #file path to download sample tableau report
-    file_path = "static/downloads/spring_2022_fellow_survey_report.pbix"
-    return send_file(file_path, as_attachment=True)
-
-
-download-pbi-survey
 
 
 #Launch App
