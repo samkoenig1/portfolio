@@ -45,14 +45,14 @@ projects = [
         'name': 'Enrollment Dashboard',
         'description': 'A Looker Studio dashboard that cleanly presented National Student Clearinghouse data for 25 districts in the state of Illinois, so that school leaders could understand their student enrollment and persistence data broken down by subgroups such as Race / Ethnicity, Gender Identity, ELL and graduating class. Before pointing to the visualization layer, we used R to clean / transform the ~million row raw data file into a format readable by Looker Studio.',
         'link_description': 'Click to Explore Github',
-        'skills': 'Looker Studio, R',
+        'skills': 'Looker Studio, R, RStudio',
         'github': 'https://github.com/samkoenig1/nsc_data_cleaning',
         'image': 'persistence'
     },
 
     {
         'name': 'UChicago To&Through Presentation',
-        'description': 'A presentation I gave to the University of Chicago To&Through Collaborative. I discussed the build out and test of a Fellow Journey Map, a tool displayed to studnets to support them in keeping track of their Junior Year milestones, and engage in advising with their teacher.',
+        'description': 'A presentation I gave to the University of Chicago To&Through Collaborative. I discussed the build out and test of a tool at OneGoal called the Fellow Journey Map. This tool displayed to students to support them in keeping track of their Junior year postsecondary milestones, and engage in regular advising with their teacher. This tool served as the roadmap for an eventual full scale web development project by our software and product teams, and served up to 1000 students at one point.',
         'link_description': 'Click to Watch Presentation',
         'skills': 'Presentation, Public Speaking',
         'github': 'https://drive.google.com/file/d/1rdz4AwLOZqStrT8M_QSmwdYlWfyrdYPh/view?usp=sharing',
