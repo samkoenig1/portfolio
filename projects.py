@@ -31,22 +31,30 @@ projects = [
         'github': 'https://github.com/samkoenig1/early-alerts-email-automation',
         'image': 'early_alert'
     },
-
+    {
+        'name': 'Student Survey Dashboard',
+        'description': 'A PowerBI dashboard and data cleaning code to summarize and display key indicators from a Spring 2022 survey for a higher education non-profit.  This version uses fake data to protect student confidentiality.',
+        'link_description': 'Click to Explore Github',
+        'skills': 'PowerBI, Power Query, Python, Pandas, Data Cleaning',
+        #COME BACK TO ADD GITHUB LINK
+        'github': 'https://github.com/samkoenig1/student_survey_pbi_report/tree/main/student_end_of_year_survey_2022',
+        'image': 'persistence'
+    },
 
     {
         'name': 'Enrollment Dashboard',
-        'description': 'A Looker Studio dashboard that cleanly presented National Student Clearinghouse data for 25 districts in the state of Illinois, so that school leaders could understand their student enrollment and persistence data broken down by subgroups such as Race / Ethnicity, Gender Identity, ELL and graduating class. Before pointing to the visualization layer, we used R to clean / transform the ~million row raw data file into a format readable by Looker Studio. This version uses fake data to protect student confidentiality.',
+        'description': 'A Looker Studio dashboard that cleanly presented National Student Clearinghouse data for 25 districts in the state of Illinois, so that school leaders could understand their student enrollment and persistence data broken down by subgroups such as Race / Ethnicity, Gender Identity, ELL and graduating class. Before pointing to the visualization layer, we used R to clean / transform the ~million row raw data file into a format readable by Looker Studio.',
         'link_description': 'Click to Explore Github',
         'skills': 'Looker Studio, R',
         #COME BACK TO ADD GITHUB LINK
-        'github': '#',
+        'github': 'https://github.com/samkoenig1/nsc_data_cleaning',
         'image': 'persistence'
     },
     {
         'name': 'Illinois Report Card - Webscraping / cleaning',
         'description': 'Python code to scrape the Illinois report card publically available data, downdload relevant files, and tranform dataset to columnar data suitable for a BI layer for metrics such as 9th Grade On Track, High School Graduation, Early College Coursework, Attendance, and Postsecondary Enrollment.',
         'link_description': 'Click to Explore Github',
-        'skills': 'Python Pandas, Selenium',
+        'skills': 'Python, Pandas, Selenium',
         #COME BACK TO ADD GITHUB LINK
         'github': 'https://github.com/samkoenig1/illinois_report_card_transform/blob/main/il.py',
         'image': 'ilreportcard'

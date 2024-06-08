@@ -44,7 +44,7 @@ def download_file():
 
 
 @app.route('/download-persistence-report')
-def download_pbi_file():
+def download_pbi_persistence_file():
     #file path to download sample PBI report
     file_path = "static/downloads/FY23_Persistence_Dashboard.pbix"
     return send_file(file_path, as_attachment=True)
@@ -54,6 +54,16 @@ def download_twbx_file():
     #file path to download sample tableau report
     file_path = "static/downloads/nwea_map_spring_2019_report.twbx"
     return send_file(file_path, as_attachment=True)
+
+@app.route('/download-pbi-survey')
+def download_pbi_survey_file():
+    #file path to download sample tableau report
+    file_path = "static/downloads/spring_2022_fellow_survey_report.pbix"
+    return send_file(file_path, as_attachment=True)
+
+
+download-pbi-survey
+
 
 #Launch App
 if __name__ == '__main__':
