@@ -59,4 +59,4 @@ def download_twbx_file():
 
 #Launch App
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)

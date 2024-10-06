@@ -7,7 +7,6 @@ projects = [
         'description': 'PowerBI Report to transform and visualize enrollment, persistence, and publically available data to present back 100k dataset to 13 districts from the state of Kentucky. Note that the report attached has all student data removed, and is for demonstration purposes only. This file will download to your computer as a .pwbx and you will need PowerBI Desktop to open it.',
         'link_description': 'Click to Download',
         'skills': 'PowerBI, Row Level Security, Power Query',
-        #COME BACK TO ADD GITHUB LINK
         'github': '/download-persistence-report',
         'image': 'ky_persistence_data'
     },
@@ -17,7 +16,6 @@ projects = [
         'description': 'Tableau Report to visualize NWEA Map data for school districts in Nasvhille, TN and Jackson, MS. This data was used by over 300 staff members annually, and contained upward of 40k rows. In production, this was distributed by Tableau Service, but the following file will be downloaded as a twbx file, and you can open via Tableau Readers desktop application. All student and school data has been removed from this report.',
         'link_description': 'Click to Download',
         'skills': 'Tableau, Tableau Prep',
-        #COME BACK TO ADD GITHUB LINK
         'github': '/download-nweamap-report',
         'image': 'sankey'
     },
