@@ -16,7 +16,8 @@ app.config['SECRET_KEY'] = SECRET_KEY
 #Create dropdown form of skills to filter on the project page
 class SkillForm(FlaskForm):
     skills =  SelectField('Skills', \
-        choices=[('', 'All'), ('Python', 'Python'), ('PowerBI', 'PowerBI'), ('RStudio','R'), ('Presentation', 'Presentation Skills'),('Tableau', 'Tableau'),   ('HTML', 'HTML'), ('CSS', 'CSS'), ('Looker Studio', 'Looker Studio'),('Javascript', 'Javascript')])
+        choices=[('', 'All'), ('Python', 'Python'), ('PowerBI', 'PowerBI'), ('RStudio','R'), ('Presentation', 'Presentation Skills'),('Tableau', 'Tableau'),\
+           ('HTML', 'HTML'), ('CSS', 'CSS'), ('Looker Studio', 'Looker Studio'), ('Regression','OLS Regression'), ('Javascript', 'Javascript')])
 
 #Start app routes
 #home page

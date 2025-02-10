@@ -93,6 +93,14 @@ projects = [
         'image': 'canvas_onboarding'
     },
     {
+        'name': 'Attendance OLS Regression',
+        'description': 'Code to support an organization in understanding how their experiments were influencing attendance using current and historical attendance files. Purpose is to support user in inputting time of intervention, length of intervention, and clean the data to show the relative signfiicance of an intervention and visualize results.',
+        'link_description': 'Click to Explore Github',
+        'skills': 'OLS Regression, Python, Pandas',
+        'github': 'https://github.com/samkoenig1/attendance_ols_regression',
+        'image': 'attendance_experiment_boxplot'
+    },
+    {
         'name': 'Mainstay / Salesforce Validation',
         'description': 'Python code to compare two separate files; one from Mainstay and one from Salesforce, to create a data quality report. Code lived in organizational sharefile account, and our team created an azure function and used Power automate to run the code anytime the reports from the respective sources were updated.',
         'link_description': 'Click to Explore Github',
